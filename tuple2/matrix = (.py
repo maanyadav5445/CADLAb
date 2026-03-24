@@ -1,0 +1,17 @@
+matrix = (
+    (1, 2, 3),
+    (4, 5, 6),
+    (7, 8, 9)
+)
+
+transpose = []
+for i in range(len(matrix)):
+    row = []
+    for j in range(len(matrix)):
+        row.append(matrix[j][i])
+    transpose.append(tuple(row))
+
+transpose = tuple(transpose)
+
+for row in transpose:
+    print(row)
